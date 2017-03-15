@@ -1,0 +1,28 @@
+{
+  "name": "webpack04",
+  "version": "1.0.0",
+  "description": "test webpack-VueComponent",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --hot --inline --progress --color --port 80"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-es2015": "^6.0.0",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.26.2",
+    "file-loader": "^0.9.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^5.0.1",
+    "style-loader": "^0.13.2",
+    "vue": "^2.2.4",
+    "vue-loader": "^10.0.0",
+    "vue-template-compiler": "^2.1.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "author": "BJ",
+  "license": "ISC"
+}
