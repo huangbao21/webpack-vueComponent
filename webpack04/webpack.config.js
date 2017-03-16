@@ -1,7 +1,8 @@
 // var webpack = require('webpack')
 var path = require('path')
 // NodeJS中的Path对象，用于处理目录的对象，提高开发效率。
-
+// 
+// process.traceDeprecation = true 
 module.exports = {
   // 入口文件地址，不需要写完，会自动查找
   entry: './src/main.js',
@@ -18,6 +19,7 @@ module.exports = {
       {
         test: /\.vue$/, 
         loader: 'vue-loader',
+        exclude: /node_modules/,
         options: {
           //解析.vue文件中样式表
           loaders: {
@@ -45,6 +47,7 @@ module.exports = {
       {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
+        exclude: /node_modules/,
         options: {
           name: '[name].[ext]?[hash]'
         }
